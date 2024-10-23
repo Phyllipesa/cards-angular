@@ -1,34 +1,22 @@
-<div class="ca-c-card">
-    <div class="ca-c-card__header ca-c-card__header--bg-blue">
-        <div class="client-infos-card__header-title">
-            <img src="assets/icons/icon-client.png" class="client-infos-card__header-icon">
-            <h1>Informações do Cliente</h1>
-        </div>
+<app-card>
+    <!-- 
+        color='blue' -> Utilizado quando a mudança de cor for statica. 
+        [attr.color]="headerColor" -> Utilizado quando a mudança de cor for dinâmica
+    -->
+    <app-card-header [attr.color]="headerColor">
+        <app-card-title title="Informações do Cliente" icon="icon-client.png"></app-card-title>
+    </app-card-header>
+    <app-card-content>
+        <app-card-item text="Nome" value="John Dee"></app-card-item>
+        <app-card-line></app-card-line>
 
-    </div>
-    <div class="ca-c-card__content">
-        <div class="client-infos-card__content-item">
-            <p>Nome</p>
-            <p>John Dee</p>
-        </div>
-        <div class="client-infos-card__content-line"></div>
+        <app-card-item text="Idade" value="26 anos"></app-card-item>
+        <app-card-line></app-card-line>
 
-        <div class="client-infos-card__content-item">
-            <p>Idade</p>
-            <p>26 anos</p>
-        </div>
-        <div class="client-infos-card__content-line"></div>
+        <app-card-item text="Renda Mensal" value="R$ -1000,00"></app-card-item>
+        <app-card-line></app-card-line>
 
-        <div class="client-infos-card__content-item">
-            <p>Renda Mensal</p>
-            <p>R$ -1000,00</p>
-        </div>
-        <div class="client-infos-card__content-line"></div>
-
-        <div class="client-infos-card__content-item">
-            <p>Nacionalidade</p>
-            <p>Americano</p>
-        </div>
-        <div class="client-infos-card__content-line"></div>
-    </div>
-</div>
+        <app-card-item text="Nacionalidade" value="Americano"></app-card-item>
+        <app-card-line></app-card-line>
+    </app-card-content>
+</app-card>

@@ -1,13 +1,10 @@
-<div class="ca-c-card">
-    <div class="ca-c-card__header">
-        <div class="debit-card__header-title">
-            <img src="/assets/icons/icon-debit-card.png" class="debit-card__header-icon">
-            <h1>Cartão de Débito</h1>
+<app-card class="ca-c-card">
+    <app-card-header>
+        <app-card-title title="Cartão de Débito" icon="icon-debit-card.png"></app-card-title>
+    </app-card-header>
+    <app-card-content>
+        <div class="ca-c-card-item">
+            <p appCardDescriptionText>Este cliente não possui Cartão de Crédito</p>
         </div>
-    </div>
-    <div class="ca-c-card__content">
-        <div class="debit-card__content-item">
-            <p>Este cliente não possui Cartão de Crédito</p>
-        </div>
-    </div>
-</div>
+    </app-card-content>
+</app-card>
